@@ -1,7 +1,7 @@
 /* Reset e Variáveis Globais */
 :root {
-    --primary-color: #ac945c;
-    --secondary-color: #e8d191; /* Azul médio */
+    --primary-color: #800020;
+    --secondary-color: #c4bf2f; /* Azul médio */
     --accent-color: #7a7a7a; /* Azul claro */
     --dark-color: #494949; /* Azul mais escuro */
     --light-color: #f8f9fa;
@@ -54,7 +54,7 @@ h1, h2, h3, h4 {
 }
 
 .primary-btn:hover {
-    background-color: var(--dark-color);
+    background-color: var(--secondary-color);
     transform: translateY(-2px);
 }
 
@@ -76,10 +76,14 @@ h1, h2, h3, h4 {
     transform: translateY(-2px);
 }
 
+i{
+    color: #c4bf2f;
+}
+
 .whatsapp-btn {
     display: inline-flex;
     align-items: center;
-    background-color: #25D366;
+    background-color: #800020;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
@@ -159,7 +163,7 @@ nav ul li a:hover:after {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(26, 63, 114, 0.153), rgba(26, 63, 114, 0.652)), url('images/imagem\ fundo.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.153), rgba(76, 51, 51, 0.652)), url('images/imagem\ fundo.jpg');
     background-size: cover;
     background-position: center;
     color: var(--white);
@@ -266,12 +270,16 @@ nav ul li a:hover:after {
 
 .socia1 img{
     height: 700px;
+    width: 482px;
+    background-color: #cccccc;
     border-radius: 0px 40px 0px 40px;
     box-shadow: 5px 5px 20px var(--dark-gray);
 }
 
 .socia2 img{
     height: 700px;
+    width: 482px;
+    background-color: #cccccc;
     border-radius: 40px 0px 40px 0px;
     box-shadow: 5px 5px 20px var(--dark-gray);    
 }
@@ -393,7 +401,7 @@ nav ul li a:hover:after {
 
 .destaque-section {
     padding: 60px 0;
-    background: linear-gradient(rgba(26, 63, 114, 0.153), rgba(26, 63, 114, 0.652)), url('images/imagem\ fundo.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.153), rgba(76, 51, 51, 0.652)), url('images/imagem\ fundo.jpg');
     background-size: cover;
     background-position: center;
     color: var(--white);
@@ -480,6 +488,15 @@ nav ul li a:hover:after {
     box-shadow: 5px 5px 15px rgb(66, 64, 64);
 }
 
+.imgDestaque{
+    width: 306px;
+    height: 440px;
+    background-color: #cccccc;
+    margin-left: 100px;
+    border-radius: 40px 0px 40px 0px;
+    box-shadow: 5px 5px 15px rgb(66, 64, 64);
+}
+
 /* Responsividade */
 @media (max-width: 768px) {
     .imgDestaque img{
@@ -487,6 +504,13 @@ nav ul li a:hover:after {
         width: auto;
         margin: 0;
         margin-bottom: 20px;
+    }
+
+    .imgDestaque{
+       height: 350px;
+        width: 250px;
+        margin: 0;
+        margin-bottom: 20px; 
     }
 
     .containerDestaque{
@@ -541,7 +565,7 @@ nav ul li a:hover:after {
     border-radius: 50%;
     object-fit: cover;
     margin: 0 auto 20px;
-    border: 3px solid #bc9c22;
+    border: 3px solid var(--primary-color);
 }
 
 .testimonial-item p {
@@ -659,7 +683,7 @@ nav ul li a:hover:after {
 
 /* Footer */
 footer {
-    background-color: rgba(7, 29, 57, 0.963);
+    background-color: rgba(3, 0, 0, 0.896);
     color: var(--white);
     padding: 60px 0 20px;
 }
@@ -703,7 +727,7 @@ footer {
 }
 
 .footer-links ul li a:hover {
-    color: var(--accent-color);
+    color: var(--secondary-color);
 }
 
 .footer-contact p {
@@ -769,6 +793,14 @@ footer {
         display: none;
     }
 
+    .socia1{
+        height: 500px;
+        width: 482px;
+        background-color: #cccccc;
+        border-radius: 0px 40px 0px 40px;
+        box-shadow: 5px 5px 20px var(--dark-gray);
+    }
+
     .socia1 img{
         width:350px;
         height: auto;
@@ -804,7 +836,7 @@ footer {
     border-radius: 50%;
     object-fit: cover;
     margin: 0 auto 20px;
-    border: 3px solid #bc9c22;
+    border: 3px solid var(--primary-color);
 }
     
     nav ul {
